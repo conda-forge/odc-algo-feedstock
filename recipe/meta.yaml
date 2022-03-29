@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -23,7 +23,7 @@ requirements:
     - affine
     - dask-core
     - dask-image
-    - datacube
+    - datacube >=1.8.5
     - distributed
     - numexpr
     - numpy
@@ -34,7 +34,7 @@ requirements:
 
 test:
   imports:
-    - odc
+    - odc.algo
   commands:
     - pip check
   requires:
@@ -49,3 +49,4 @@ about:
 extra:
   recipe-maintainers:
     - ocefpaf
+    - Kirill888
