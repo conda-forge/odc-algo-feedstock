@@ -27,7 +27,7 @@ requirements:
     - distributed
     - numexpr
     - numpy
-    - rasterio
+    - rasterio >=1.3.2
     - scikit-image
     - toolz
     - xarray
