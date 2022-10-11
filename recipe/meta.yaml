@@ -1,5 +1,5 @@
 {% set name = "odc-algo" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/odc-algo-{{ version }}.tar.gz
-  sha256: b48a2cd98a5cb0ac6d4f2cd81f69c9fca876a53e84ee99b9178efb36a3d271b2
+  sha256: 1cb49389d282bf4b8c08dc7eabb474b345c8110e8eadd52ee95874d80c7ed494
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
