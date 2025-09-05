@@ -1,7 +1,7 @@
 {% set python_min = "3.10" %}
 
 {% set name = "odc-algo" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: fd8b4e49e5fdda34eded15c16e679dc89cbb50b74a825749d2e0b87b1e2ce720
+  sha256: bcf1b58f581ab689ac20536d2da7cabf209f00a8400783a25a6eef8872f7139a
 
 build:
   noarch: python
