@@ -1,7 +1,7 @@
 {% set python_min = "3.10" %}
 
 {% set name = "odc-algo" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: bcf1b58f581ab689ac20536d2da7cabf209f00a8400783a25a6eef8872f7139a
+  sha256: 84f46df6edb3e2b3f86862e427f4fd1423f75dbea81e0e1223f0bb18b38d5194
 
 build:
   noarch: python
@@ -35,6 +35,7 @@ requirements:
     - scikit-image
     - toolz
     - xarray
+    - geomad
 
 test:
   imports:
