@@ -35,6 +35,7 @@ requirements:
     - scikit-image
     - toolz
     - xarray
+    - geomad
 
 test:
   imports:
