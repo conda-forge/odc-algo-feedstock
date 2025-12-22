@@ -27,7 +27,7 @@ requirements:
     - affine
     - dask-core
     - dask-image
-    - distributed <2025.4
+    - distributed
     - numexpr
     - numpy
     - rasterio >=1.3.2
