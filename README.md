@@ -3,11 +3,13 @@ About odc-algo-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/odc-algo-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/opendatacube/odc-tools/
+Home: https://opendatacube.org/
 
 Package license: Apache-2.0
 
 Summary: Miscellaneous Algorithmic helper methods
+
+Development: https://github.com/opendatacube/odc-algo/
 
 Current build status
 ====================
