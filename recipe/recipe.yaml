@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.2.0"
+  version: "1.2.1"
 
 package:
   name: odc-algo
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/o/odc-algo/odc_algo-${{ version }}.tar.gz
-  sha256: 9fba4aa1ffba62c00a220df0cfd47800f3572b7e308e2bf30c450f42962ba704
+  sha256: cb7f9439db1caa5a2e637efe114a0570b0c16856d483786bc5caab06b9916eb6
 
 build:
   number: 0
