@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.2.1"
+  version: 1.2.2
 
 package:
   name: odc-algo
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/o/odc-algo/odc_algo-${{ version }}.tar.gz
-  sha256: cb7f9439db1caa5a2e637efe114a0570b0c16856d483786bc5caab06b9916eb6
+  sha256: dbd2130290c558c37eda567aac870b2861c586102a0189ba122192cbf540e56f
 
 build:
   number: 0
@@ -25,8 +25,8 @@ requirements:
   run:
     - python >=${{ python_min }}
     - affine
-    - dask-core <=2025.3.0
-    - distributed <=2025.3.0
+    - dask-core >=2025.10.0
+    - distributed >=2025.10.0
     - geomad
     - numexpr
     - numpy
@@ -35,7 +35,6 @@ requirements:
     - scipy
     - toolz
     - xarray
-
 tests:
   - python:
       imports:
@@ -43,7 +42,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
 
 about:
   summary: Miscellaneous Algorithmic helper methods
